@@ -1,0 +1,16 @@
+---
+title: "life_exp"
+author: "Beth Leap"
+date: "1/10/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Abstract
+
+Examining the analysis of Oeppen and Vaupel (2002) while practicing my git skills.
+
+# Analysis
