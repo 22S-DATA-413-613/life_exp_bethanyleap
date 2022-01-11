@@ -25,12 +25,12 @@ data("gapminder_unfiltered")
 ```{r}
 # find max life expectancy for each year and country which had max life expectancy
 
-sumdat <- gapminder_unfiltered |>
-  group_by(year) |>
-  filter(lifeExp == max(lifeExp)) |>
-  ungroup() |>
-  select(year, country, lifeExp) |>
-  arrange((year))
+sumdat <- gapminder_unfiltered |> # using natural pipe even though I hate it
+  group_by(year) |> # group by year
+  filter(lifeExp == max(lifeExp)) |> # filter only obs which are max for lifeExp
+  ungroup() |> # so I don't mess up later
+  select(year, country, lifeExp) |> # select what I need
+  arrange(year) # from oldest to newest
 
 sumdat
 ```
